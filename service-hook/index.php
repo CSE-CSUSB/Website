@@ -1,5 +1,7 @@
 <?php
 
+// Github deploy script
+
 $ip = ip2long($_SERVER['REMOTE_ADDR']);
 
 $github = array(
@@ -12,9 +14,9 @@ function cidr($ip, $range)
 	foreach($range as $cidr) {
 		$parts = explode("/", $cidr);
 		$check = ip2long($parts[0]);
-		$mask = 256 - pow(2, (int)$parts[1]);
+		$mask = pow(2, 32) - pow(2, (int)$parts[1]);
 
-		if ($check & $mask == $ip & $mask)
+		if (($check & $mask) == ($ip & $mask))
 			return true;
 	}
 
