@@ -1,52 +1,74 @@
-      h1 {
-        font-size: 2em;
-        line-height: 1.5em;
-      }
-      
-      h2 {
-        font-size: 1.5em;
-        line-height: 1.5em;
-      }
-      
-      html {
-        font-size: 16px;
-        line-height: 1.5em;
-      }
-      
-      body {
-        font-family: "myriad-pro", Verdana, Helvetica, Arial, sans-serif;
-        background: #fff;
-        color: #444;
-      }
-      
-      a {
-        color: #F02311;
-      }
-      
-        a:hover,
-        a:focus {
-          color: #FF9900;
-        }
-        
-        a:active {
-          position: relative;
-          top: 1px;
-        }
-    
-      .container {
-        width: 90%;
-        margin: 4em auto;
-      }
-      
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+body {
+  font-family: "myriad-pro", Verdana, Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #444;
+}
+
+table {
+  display: block;
+  border-collapse: collapse;
+}
+
+    tr:nth-child(2n) {
+      background: #f7f7f7;
+    }
+
+    th,
+    td {
+      padding: .5em 1em;
+    }
+
+    th {
+      background: #ccc;
+    }
+
+    td {
+      border: 1px solid #ccc;
+    }
+
+h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+a {
+  color: #F02311;
+}
+
+  a:hover,
+  a:focus {
+    color: #FF9900;
+  }
+  
+  a:active {
+    position: relative;
+    top: 1px;
+  }
+
+.container {
+  width: 90%;
+  margin: 4em auto;
+}
+
       .copyright {
         border-top: 1px dashed #ccc;
         padding-top: 1em;
         font-size: .8em;
         line-height: 1.5em;
       }
-      
-      @media screen and (min-width: 600px) {
-        .container {
-          width: 600px;
-        }
-      }
+
+@media screen and (min-width: 600px) {
+  .container {
+    width: 600px;
+  }
+}
