@@ -11,6 +11,7 @@ body {
 
 table {
   display: block;
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -21,14 +22,11 @@ table {
     th,
     td {
       padding: .5em 1em;
+      border: 1px solid #ccc;
     }
 
     th {
       background: #ccc;
-    }
-
-    td {
-      border: 1px solid #ccc;
     }
 
 h1 {
