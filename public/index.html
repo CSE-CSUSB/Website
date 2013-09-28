@@ -11,60 +11,7 @@
     <script type="text/javascript" src="//use.typekit.net/dqu0xzz.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     
-    <style>
-      h1 {
-        font-size: 2em;
-        line-height: 1.5em;
-      }
-      
-      h2 {
-        font-size: 1.5em;
-        line-height: 1.5em;
-      }
-      
-      html {
-        font-size: 16px;
-        line-height: 1.5em;
-      }
-      
-      body {
-        font-family: "myriad-pro", Verdana, Helvetica, Arial, sans-serif;
-        background: #fff;
-        color: #444;
-      }
-      
-      a {
-        color: #F02311;
-      }
-      
-        a:hover,
-        a:focus {
-          color: #FF9900;
-        }
-        
-        a:active {
-          position: relative;
-          top: 1px;
-        }
-    
-      .container {
-        width: 90%;
-        margin: 4em auto;
-      }
-      
-      .copyright {
-        border-top: 1px dashed #ccc;
-        padding-top: 1em;
-        font-size: .8em;
-        line-height: 1.5em;
-      }
-      
-      @media screen and (min-width: 600px) {
-        .container {
-          width: 600px;
-        }
-      }
-    </style>
+    <link rel='stylesheet' href='styles/main.css' />
   </head>
   <body>
     <div class='container'>
@@ -78,23 +25,90 @@
       
       <h2 id='meetings'>Meetings</h2>
       
-      <ul>
-        <li><strong>October 1st, 2:00 - 4:00 pm</strong> in <strong>JB-138</strong></li>
-        <li><strong>October 2nd, 4:00 - 6:00 pm</strong> in <strong>JB-114</strong></li>
-      </ul>
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Location</th>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>2:00 pm to 4:00 pm</td>
+          <td>JB-138</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>4:00 pm to 6:00 pm</td>
+          <td>JB-114</td>
+        </tr>
+      </table>
       
-      <h2 id='linux-tutorial'>Linux Tutorial</h2>
-
-      <p>Linux Tutorial this Friday from 4:00 to 5:00 pm in JB-358 and JB-359.</p>
+      <h2 id='office-hours'>Temporary Office Hours</h2>
       
-      <h2 id='meetings'>Temporary Office Hours</h2>
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>4:00 pm to 10:00 pm</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>8:00 am to 12:00 pm</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>4:00 pm to 10:00 pm</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>2:00 pm to 5:00 pm</td>
+        </tr>
+      </table>
       
-      <ul>
-        <li><strong>Monday</strong> from <strong>04:00 to 10:00 pm</strong></li>
-        <li><strong>Tuesday</strong> from <strong>08:00 to 12:00 am</strong></li>
-        <li><strong>Wednesday</strong> from <strong>4:00 to 10:00 pm</strong></li>
-        <li><strong>Friday</strong> from <strong>2:00 to 5:00 pm</strong></li>
-      </ul>
+      <h2 id='tutoring'>Tutoring Schedule</h2>
+      
+      <table>
+        <tr>
+          <th>Tutor</th>
+          <th>Classes</th>
+          <th>Hours</th>
+        </tr>
+        <tr>
+          <td>Andrew Brinker</td>
+          <td>
+            <ul>
+              <li>201, Computer Science 1</li>
+              <li>202, Computer Science 2</li>
+              <li>320, Programming Languages</li>
+              <li>322, Web Programming</li>
+              <li>330, Data Structures</li>
+              <li>431, Algorithm Analysis</li>
+            </ul>
+          </td>
+          <td>Tue, Wed, Thu 8:30 am - 10:00 am</td>
+        </tr>
+        <tr>
+          <td>Yakira Dixon</td>
+          <td>
+            <ul>
+              <li>201, Computer Science 1</li>
+              <li>202, Computer Science 2</li>
+              <li>322, Web Programming</li>
+              <li>572, Database Systems</li>
+            </ul>
+          </td>
+          <td>
+            Tue 10:00 am - 11:30 am; Thu 10:00 am - 12:00 pm
+          </td>
+        </tr>
+      </table>
 
       <div class='copyright'>
         Copyright &copy; 2013 by the Computer Science &amp; Engineering Club<br>California State University, San Bernardino
