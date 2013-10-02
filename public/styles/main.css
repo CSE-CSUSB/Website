@@ -12,12 +12,11 @@ body {
 table {
   width: 100%;
   border-collapse: collapse;
-  border: 2px solid #ccc;
 }
 
     th,
     td {
-      padding: .5em;
+      padding: .5em .75em;
       border: 1px solid #ccc;
       vertical-align: top;
     }
