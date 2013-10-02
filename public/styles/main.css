@@ -64,7 +64,7 @@ a {
         line-height: 1.5em;
       }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 680px) {
   .container {
     width: 680px;
   }
