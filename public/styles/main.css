@@ -15,17 +15,22 @@ table {
 }
 
     tr:nth-child(2n+1) {
-      background: #f7f7f7;
+      background: #fbfbfb;
+    }
+    
+    thead th {
+      border: 0;
+      border-bottom: 2px solid #ccc;
     }
 
     th,
     td {
-      padding: .5em 1em;
+      padding: .25em .5em;
       border: 1px solid #ccc;
     }
 
     th {
-      background: #eee;
+      background: #fff;
     }
 
 h1 {
