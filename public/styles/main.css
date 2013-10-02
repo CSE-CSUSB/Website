@@ -27,6 +27,11 @@ table {
       text-align: left;
     }
 
+h1,
+h2 {
+  font-family: "franklin-gothic-urw-cond", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 h1 {
   font-size: 4em;
   line-height: 1.5em;
