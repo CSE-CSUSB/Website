@@ -17,20 +17,18 @@ table {
     tr:nth-child(2n+1) {
       background: #fbfbfb;
     }
-    
-    thead th {
-      border: 0;
-      border-bottom: 2px solid #ccc;
-    }
 
     th,
     td {
       padding: .25em .5em;
       border: 1px solid #ccc;
+      vertical-align: top;
     }
 
     th {
       background: #fff;
+      border-top: 0;
+      border-bottom: 2px solid #ccc;
     }
 
 h1 {
