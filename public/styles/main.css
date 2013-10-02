@@ -12,6 +12,7 @@ body {
 table {
   width: 100%;
   border-collapse: collapse;
+  border: 2px solid #ccc;
 }
 
     th,
@@ -24,6 +25,7 @@ table {
     th {
       background: #fff;
       border-bottom: 2px solid #999;
+      text-align: left;
     }
 
 h1 {
