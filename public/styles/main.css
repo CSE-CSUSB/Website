@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-family: "myriad-pro", Verdana, Helvetica, Arial, sans-serif;
+  font-family: "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #fff;
   color: #444;
 }
@@ -28,17 +28,19 @@ table {
     }
 
 h1 {
-  font-size: 2em;
+  font-size: 4em;
   line-height: 1.5em;
+  text-align: center;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.75em;
   line-height: 1.5em;
+  margin-top: 2em;
 }
 
 a {
-  color: #F02311;
+  color: #0094ce;
 }
 
   a:hover,
@@ -56,16 +58,32 @@ a {
   margin: 4em auto;
 }
 
-      .copyright {
-        border-top: 1px dashed #ccc;
-        margin-top: 4em;
-        padding-top: 1em;
-        font-size: .8em;
-        line-height: 1.5em;
-      }
+   .logo {
+     font-size: 1em;
+     line-height: 1.5em;
+     background: url("../images/logo.png") center top no-repeat;
+     width: 300px;
+     height: 185px;
+     margin: 0 auto 2em auto;
+     background-color: transparent;
+     border: 0;
+     overflow: hidden;
+     *text-indent: -9999px;
+   }
 
-@media screen and (min-width: 680px) {
+     .logo:before {
+       content: "";
+       display: block;
+       width: 0;
+       height: 150%;
+     }
+
+   .copyright {
+     margin-top: 4em;
+   }
+
+@media screen and (min-width: 620px) {
   .container {
-    width: 680px;
+    width: 580px;
   }
 }
