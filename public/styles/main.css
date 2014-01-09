@@ -87,6 +87,13 @@ a {
      margin-top: 4em;
    }
 
+.alert-box {
+  padding: 2em;
+  background: #0094ce;
+  color: #fff;
+  border-radius: 4px;
+}
+
 @media screen and (min-width: 620px) {
   .container {
     width: 580px;
