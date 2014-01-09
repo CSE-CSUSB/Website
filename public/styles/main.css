@@ -88,10 +88,11 @@ a {
    }
 
 .alert-box {
-  padding: 2em;
+  padding: 1em 2em;
   background: #0094ce;
   color: #fff;
   border-radius: 4px;
+  text-shadow: rgba(0,0,0,.25) 0 1px 1px;
 }
 
 @media screen and (min-width: 620px) {
