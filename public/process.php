@@ -18,9 +18,7 @@ if (empty($_POST['cid']) or
 $cid = ltrim($_POST['cid'], '0');
 $members = file($member_file, FILE_IGNORE_NEW_LINES);
 
-//
-echo "Just a moment.<br>Votes are severely throttled, to prevent cheating.<br>";
-
+// Throttle votes to prevent cheating
 sleep(0.5);
 
 // Validate coyote id
