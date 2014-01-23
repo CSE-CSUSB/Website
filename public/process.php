@@ -11,8 +11,8 @@ if (empty($_POST['cid']) or
     empty($_POST['webmaster']) or 
     empty($_POST['information']) or 
     empty($_POST['event'])) {
-    header( "Refresh:5; url=http://cse-club.com/vote.html", true, 303);
-    die("Invalid vote. Make sure you filled out the form completely.");
+    header( "Refresh:3; url=http://cse-club.com/vote.html", true, 303);
+    die("Invalid vote. Make sure you filled out the form completely.<br>Page will reload shortly.");
 }
 
 // Build member list
@@ -47,7 +47,7 @@ if (array_search($cid, $members) === False) {
     echo "Vote has been cast, thank you!";
 }
 
-header( "Refresh:5; url=http://cse-club.com", true, 303);
+header( "Refresh:3; url=http://cse-club.com", true, 303);
 
 
 
