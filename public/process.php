@@ -1,9 +1,9 @@
 <?php
 
 // Data files
-$member_file = "members.txt";
-$votes_file = "votes.txt";
-$candidates_file = "candidates.txt";
+$member_file = "../members.txt";
+$votes_file = "../votes.txt";
+$candidates_file = "../candidates.txt";
 
 // Sanity check on input variables
 if (empty($_POST['cid']) or 
