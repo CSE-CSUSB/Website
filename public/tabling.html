@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class='no-js'>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tabling - CSE Club at CSU, San Bernardino</title>
+    <meta content='The official website of the Computer Science and Engineering Club of CSU, San Bernardino.' name='description'>
+    <meta content='width=device-width' name='viewport'>
+    
+    <!-- Typekit Stuff -->
+    <script type="text/javascript" src="//use.typekit.net/dqu0xzz.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+    <link rel='stylesheet' href='styles/main.css' />
+  </head>
+  <body>
+    <div class='container'>
+      <header>
+        <h1 class='logo'>
+          CSE Club
+        </h1>
+      </header>
+
+      <p>Want to volunteer to help us with tabling? Just fill in this form to let us know.</p>
+
+      <form method="post" action="tabling.php">
+        <label for="name">Name: </label><br />
+          <input type="text" name="name" id="name" /><br />
+          <br />
+
+        <label for="cid">Coyote ID: </label><br />
+          <input type="text" name="cid" id="cid" /><br />
+          <br />
+
+        <label for="cid">I am a CSE Club member: </label><br />
+          <input type="checkbox" name="member" id="member" /><br />
+          <br />
+
+        <label for="email">Email Address: </label><br />
+          <input type="email" name="email" id="email" /><br />
+          <br />
+
+        <label for="times">Times you are available: </label><br />
+          <textarea id="times" name="times"></textarea>
+          <br />
+
+        <input type="submit" value="Reserve" />
+      </form>
+
+      <div class='copyright'>
+        Copyright &copy; 2013 by the Computer Science &amp; Engineering Club<br>California State University, San Bernardino
+      </div>
+    </div>
+  </body>
+</html>
