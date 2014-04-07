@@ -1,6 +1,3 @@
-Website
-=======
+# CSE Club Website
 
-Website is under heavy development
-
-Mike is adding his name
+This is the official repo for the CSE Club website at CSU, San Bernardino.

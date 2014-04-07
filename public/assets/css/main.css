@@ -52,7 +52,7 @@ a {
   a:focus {
     color: #FF9900;
   }
-  
+
   a:active {
     position: relative;
     top: 1px;
@@ -66,7 +66,7 @@ a {
    .logo {
      font-size: 1em;
      line-height: 1.5em;
-     background: url("../images/logo.png") center top no-repeat;
+     background: url("/assets/img/logo.png") center top no-repeat;
      width: 240px;
      height: 148px;
      margin: 0 auto 3em auto;
