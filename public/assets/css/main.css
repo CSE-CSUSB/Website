@@ -88,7 +88,8 @@ a {
    }
 
   .button {
-    display: inline-block;
+    display: block;
+    margin: .5em 0;
     padding: .5em .75em;
     background: #dedede;
     color: #444;
@@ -99,11 +100,6 @@ a {
     font-family: "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
   }
-
-    .button.right {
-      float: right;
-      margin-top: .25em;
-    }
 
     .button:hover,
     .button:focus {
@@ -123,4 +119,14 @@ a {
   .container {
     width: 580px;
   }
+
+    .button {
+      display: inline-block;
+      margin: 0;
+    }
+
+      .button.right {
+        float: right;
+        margin-top: .25em;
+      }
 }
