@@ -1,9 +1,9 @@
 <?php
 
 // Data files
-$member_file = "../members.txt";
-$votes_file = "../votes.txt";
-$candidates_file = "../candidates.txt";
+$member_file = "../../members.txt";
+$votes_file = "../../votes.txt";
+$candidates_file = "../../candidates.txt";
 
 // Sanity check on input variables
 if (empty($_POST['cid']) or 
@@ -11,7 +11,7 @@ if (empty($_POST['cid']) or
     empty($_POST['webmaster']) or 
     empty($_POST['information']) or 
     empty($_POST['event'])) {
-    header( "Refresh:3; url=http://cse-club.com/vote.html", true, 303);
+    header( "Refresh:3; url=http://cse-club.com/vote", true, 303);
     die("Invalid vote. Make sure you filled out the form completely.<br>Page will reload shortly.");
 }
 

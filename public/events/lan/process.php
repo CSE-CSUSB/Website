@@ -1,11 +1,11 @@
 <?php
 	// Data file
-	$res_file = "../lanres.txt";
+	$res_file = "../../../lanres.txt";
 		
 	// Input check
 	if(empty($_POST['cid']) ||
 	   empty($_POST['name'])) {
-		header("Refresh:3; lanres.html", true, 303);
+		header("Refresh:3; /events/lan", true, 303);
 		die("Please enter your name and Coyote ID. You will be sent back to the form.");
 	}
 
