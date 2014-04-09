@@ -228,6 +228,7 @@ a {
         .nav li {
           display: block;
           float: none;
+          margin: 0;
         }
 
           .nav a {
@@ -236,17 +237,23 @@ a {
             position: relative;
           }
 
+            .nav a:hover,
+            .nav a:focus {
+              background: #d2ebff;
+              border-radius: 4px;
+            }
+
             .nav a:hover:after,
             .nav a:focus:after {
               content: "";
               position: absolute;
               top: 50%;
-              right: .35em;
+              right: 1em;
               width: 0;
               height: 0;
-              border-top: .5em solid #dedede;
-              border-left: .35em solid transparent;
-              border-right: .35em solid transparent;
+              border-top: .5em solid rgba(0,0,0,.25);
+              border-left: .5em solid transparent;
+              border-right: .5em solid transparent;
               margin-top: -.175em;
             }
 
