@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 16px;
   line-height: 1.5em;
@@ -7,6 +13,7 @@ body {
   font-family: "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #fff;
   color: #444;
+  border-top: 8px solid #f7f7f7;
 }
 
 table {
@@ -44,6 +51,26 @@ h2 {
   margin-top: 2em;
 }
 
+  h2:after {
+    content: attr(data-title);
+    font-weight: 500;
+    font-size: .8em;
+    color: #999;
+    margin-left: .5em;
+    line-height: 1em;
+    opacity: 0;
+    -webkit-transition: opacity .1s linear;
+       -moz-transition: opacity .1s linear;
+            transition: opacity .1s linear;
+  }
+
+    h2:hover:after {
+      opacity: 1;
+      -webkit-transition: opacity .1s linear;
+         -moz-transition: opacity .1s linear;
+              transition: opacity .1s linear;
+    }
+
 a {
   color: #0094ce;
 }
@@ -60,7 +87,7 @@ a {
 
 .container {
   width: 90%;
-  margin: 4em auto;
+  margin: 3em auto;
 }
 
    .logo {
