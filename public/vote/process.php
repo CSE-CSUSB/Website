@@ -11,7 +11,7 @@ $GLOBALS["V0TES_FILE"] = V0TES_FILE;
 }
 if (empty($_POST['cid']) or empty($_POST['president']) or empty($_POST['vp']) or empty($_POST['treasurer']) or empty($_POST['secretary']) or empty($_POST['info']) or empty($_POST['event']) or empty($_POST['webmaster'])) 
 die("Invalid vote. Make sure you filled in your Coyote ID and your vote for each position.");
-$GLOBALS["candidates"] = array('president' => array('allbee'), 'vp' => array('swoope', 'brinker', 'sterrett'), 'treasurer' => array('swoope', 'abadines', 'allbee'), 'secretary' => array('legg', 'sterrett'), 'info' => array('swoope', 'brinker'), 'event' => array('alsibai'), 'webmaster' => array('korcha'));
+$GLOBALS["candidates"] = array('president' => array('allbee'), 'vp' => array('swoope', 'brinker', 'sterrett'), 'treasurer' => array('swoope', 'abadines', 'allbee'), 'secretary' => array('legg', 'sterrett'), 'info' => array('swoope', 'brinker', 'sterrett'), 'event' => array('alsibai'), 'webmaster' => array('korcha'));
 $GLOBALS["cid"] = ltrim($_POST['cid'], '0');
 $GLOBALS["members"] = file($GLOBALS['MEmBER_FILE'], FILE_IGNORE_NEW_LINES);
 class Voting {
