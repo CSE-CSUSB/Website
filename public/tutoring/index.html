@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class='no-js'>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tabling - CSE Club at CSU, San Bernardino</title>
+    <meta content='The official website of the Computer Science and Engineering Club of CSU, San Bernardino.' name='description'>
+    <meta content='width=device-width' name='viewport'>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+
+    <link rel='stylesheet' href='/assets/css/main.css' />
+  </head>
+  <body>
+    <div class='container'>
+      <header>
+        <h1 class='logo'>
+          CSE Club
+        </h1>
+      </header>
+
+      <h2>Tutoring Sign In</h2>
+
+      <p>Please make sure to sign in each time you recieve tutoring for our records.</p>
+
+      <form method="post" action="/tutoring/process.php">
+        <label for="name">Name: </label><br />
+          <input type="text" name="name" id="name" /><br />
+          <br />
+
+        <label for="tutor">Tutor: </label><br />
+          <select name="tutor" id="tutor">
+            <option value="Andrew Brinker">Andrew Brinker</option>
+            <option value="Alejandro Lazo">Alejandro Lazo</option>
+            <option value="Tim Castle">Tim Castle</option>
+          </select><br />
+          <br />
+        
+        <label for="classes">Class(es): </label><br />
+          <input type="text" name="classes" id="classes" /><br />
+          <br />
+
+        <label for="cid">I am a CSE Club member </label>
+          <input type="checkbox" name="member" id="member" /><br />
+          <br />
+
+
+        <input type="submit" value="Submit" />
+      </form>
+
+      <div class='copyright'>
+        Copyright &copy; 2014 by the Computer Science &amp; Engineering Club<br>California State University, San Bernardino
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-<?
+<?/*
 // Tread carefully, for the horror is real
 define("MEMBER_FILE", "../../members.txt");
 define("V0TES_FILE",  "../../votes.txt");
