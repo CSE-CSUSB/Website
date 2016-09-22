@@ -237,6 +237,23 @@ img {
   border-top: 1px solid #eee;
 }
 
+/***********************************/
+/*              Tables             */
+/***********************************/
+
+th,
+td {
+  padding: 3px 20px;
+}
+
+th {
+  background: #e6e6e6;
+}
+
+tr:nth-child(even) {
+  background: #e6f7ff;
+}
+
 
 /***********************************/
 /* Styling for Syntax Highlighting */
