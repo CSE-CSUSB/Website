@@ -132,6 +132,8 @@ header a {
 
 header a:focus, header a:hover, header a:active {
   color: white;
+  border-bottom: 2px solid white;
+  text-decoration: none;
 }
 
 h1 {
