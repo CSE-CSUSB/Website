@@ -130,6 +130,10 @@ header a {
   color: white;
 }
 
+header a:focus, header a:hover, header a:active {
+  color: white;
+}
+
 h1 {
   font-size: 3.2rem;
   display: inline-block;
