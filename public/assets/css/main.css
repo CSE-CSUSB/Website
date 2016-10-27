@@ -260,6 +260,15 @@ tr:nth-child(even) {
   background: #e6f7ff;
 }
 
+/***********************************/
+/*            Copyright             */
+/***********************************/
+
+#copyright {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
 
 /***********************************/
 /* Styling for Syntax Highlighting */
