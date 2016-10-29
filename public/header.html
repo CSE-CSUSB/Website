@@ -6,70 +6,113 @@
 <link rel="stylesheet" href="w3-theme-blue.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <body>
-  <!-- Header -->
-  <header class="w3-container w3-theme-d2 w3-padding" id="myHeader">
-    <div class="w3-center w3-padding w3-card-2">
-      <h4>at California State University, San Bernardino</h4>
-      <h1 class="w3-xxxlarge w3-animate-opacity"><a href="https://cse-csusb.org"><img src="images/cse_club_icon.png" style="width:10%" align="top"></a> Computer Science &amp; Engineering Club</h1>
-    </div>
-  </header>
+	<!-- Header -->
+	<header class="w3-container w3-theme-d2 w3-padding" id="myHeader">
+		<div class="w3-center w3-padding w3-card-2">
+			<h4>at California State University, San Bernardino</h4>
+			<h1 class="w3-xxxlarge w3-animate-opacity"><a href="https://cse-csusb.org"><img src="images/cse_club_icon.png" style="width:10%" align="top"></a> Computer Science &amp; Engineering Club</h1>
+		</div>
+	</header>
 
-  <!-- Navigation -->
-  
-    <ul class="w3-navbar w3-theme-d2">
+	<!-- Navigation -->
 
-      <!-- Home -->
-      <li><a class="w3-padding-16" href="https://cse-csusb.org">Home</a></li>
+	<script>
+		function dropClick1() {
+			var x = document.getElementById("join");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else { 
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+		function dropClick2() {
+			var x = document.getElementById("service");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else { 
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+		function dropClick3() {
+			var x = document.getElementById("social");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else { 
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+		function dropClick4() {
+			var x = document.getElementById("professional");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else { 
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+		function dropClick5() {
+			var x = document.getElementById("about");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else { 
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+	</script>
 
-      <!-- Club Application Links -->
-      <li class="w3-dropdown-hover">
-        <a class="w3-padding-16" href="javascript:void(0)">Join CSE Club<i class="fa fa-down"></i></a>
-        <div class="w3-dropdown-content w3-card-4">
-          <a class="w3-padding-16" href="https://docs.google.com/forms/d/e/1FAIpQLSfPbc3l7C0q2PpgBKR3cf2YaciJ821_hmauI3bJ-TRvbwamnw/viewform?c=0&w=1"target="_blank">Member Application</a>
-          <a class="w3-padding-16" href="https://docs.google.com/forms/d/e/1FAIpQLScho5g_xlwk-NMK-kotOTjVeIWTDNSsOv7Sk9skPNHowlSLtg/viewform?c=0&w=1"target="_blank">Newsletter Signup</a>
-        </div>
-      </li>
+	<ul class="w3-navbar w3-theme-d2">
 
-      <!-- Services -->
-      <li class="w3-dropdown-hover">
-        <a class="w3-padding-16" href="javascript:void(0)">Services<i class="fa fa-down"></i></a>
-        <div class="w3-dropdown-content w3-card-4">
-          <a class="w3-padding-16" href="tutoring.html">Peer Tutoring</a>
-          <a class="w3-padding-16" href="projects.html">Projects</a>
-          <a class="w3-padding-16" href="events.html">Events</a>
-          <a class="w3-padding-16" href="workshops_speakers.html">Workshops &amp; Speakers</a>
-          <a class="w3-padding-16" href="jobs.html">Experience &amp; Work Opportunities</a>
-        </div>
-      </li>
+		<!-- Home -->
+		<li><a class="w3-padding-16" href="https://cse-csusb.org">Home</a></li>
 
-      <!-- Social Media -->
-      <li class="w3-dropdown-hover">
-        <a class="w3-padding-16" href="javascript:void(0)">Social Media<i class="fa fa-down"></i></a>
-        <div class="w3-dropdown-content w3-card-4">
-          <a class="w3-padding-16" href="https://www.facebook.com/groups/csec.sb/"target="_blank">Facebook</a>
-        </div>
-      </li>
+		<!-- Club Application Links -->
+		<li class="w3-dropdown-click">
+			<a onclick="dropClick1()" class="w3-padding-16" href="javascript:void(0)">Join CSE Club <i class="fa fa-caret-down"></i></a>
+			<div id="join" class="w3-dropdown-content w3-card-4">
+				<a class="w3-padding-16" href="https://docs.google.com/forms/d/e/1FAIpQLSfPbc3l7C0q2PpgBKR3cf2YaciJ821_hmauI3bJ-TRvbwamnw/viewform?c=0&w=1"target="_blank">Member Application</a>
+				<a class="w3-padding-16" href="https://docs.google.com/forms/d/e/1FAIpQLScho5g_xlwk-NMK-kotOTjVeIWTDNSsOv7Sk9skPNHowlSLtg/viewform?c=0&w=1"target="_blank">Newsletter Signup</a>
+			</div>
+		</li>
 
-      <!-- Professional Organizations -->
-      <li class="w3-dropdown-hover">
-        <a class="w3-padding-16" href="javascript:void(0)">Professional Organizations<i class="fa fa-down"></i></a>
-        <div class="w3-dropdown-content w3-card-4">
-          <a class="w3-padding-16" href="http://www.ieee.org/membership_services/membership/join/index.html"target="_blank">Institute of Electrical and Electronics Engineers</a>
-          <a class="w3-padding-16" href="http://www.acm.org/membership/join-acm"target="_blank">Association for Computing Machinery</a>
-          <a class="w3-padding-16" href="https://www.nspe.org/membership/join-now"target="_blank">National Society of Professional Engineers</a>
-        </div>
-      </li>
+		<!-- Services -->
+		<li class="w3-dropdown-click">
+			<a onclick="dropClick2()" class="w3-padding-16" href="javascript:void(0)">Services <i class="fa fa-caret-down"></i></a>
+			<div id="service" class="w3-dropdown-content w3-card-4">
+				<a class="w3-padding-16" href="tutoring.html">Peer Tutoring</a>
+				<a class="w3-padding-16" href="projects.html">Projects</a>
+				<a class="w3-padding-16" href="events.html">Events</a>
+				<a class="w3-padding-16" href="workshops_speakers.html">Workshops &amp; Speakers</a>
+				<a class="w3-padding-16" href="jobs.html">Experience &amp; Work Opportunities</a>
+			</div>
+		</li>
 
-      <!-- Calendar -->
-      <li><a class="w3-padding-16" href="calendar.html">Calendar</a></li>
+		<!-- Social Media -->
+		<li class="w3-dropdown-click">
+			<a onclick="dropClick3()" class="w3-padding-16" href="javascript:void(0)">Social Media <i class="fa fa-caret-down"></i></a>
+			<div id="social" class="w3-dropdown-content w3-card-4">
+				<a class="w3-padding-16" href="https://www.facebook.com/groups/csec.sb/"target="_blank">Facebook</a>
+			</div>
+		</li>
 
-      <!-- About -->
-      <li class="w3-dropdown-hover">
-        <a class="w3-padding-16" href="javascript:void(0)">About<i class="fa fa-down"></i></a>
-        <div class="w3-dropdown-content w3-card-4">
-          <a class="w3-padding-16" href="about.html">About CSE Club</a>
-          <a class="w3-padding-16" href="construction.html">Hangouts</a>
-          <a class="w3-padding-16" href="contact.html">Contact Us</a>
-        </div>
-      </li>
-    </ul>
+		<!-- Professional Organizations -->
+		<li class="w3-dropdown-click">
+			<a onclick="dropClick4()" class="w3-padding-16" href="javascript:void(0)">Professional Organizations <i class="fa fa-caret-down"></i></a>
+			<div id="professional" class="w3-dropdown-content w3-card-4">
+				<a class="w3-padding-16" href="http://www.ieee.org/membership_services/membership/join/index.html"target="_blank">Institute of Electrical and Electronics Engineers</a>
+				<a class="w3-padding-16" href="http://www.acm.org/membership/join-acm"target="_blank">Association for Computing Machinery</a>
+				<a class="w3-padding-16" href="https://www.nspe.org/membership/join-now"target="_blank">National Society of Professional Engineers</a>
+			</div>
+		</li>
+
+		<!-- Calendar -->
+		<li><a class="w3-padding-16" href="calendar.html">Calendar</a></li>
+
+		<!-- About -->
+		<li class="w3-dropdown-click">
+			<a onclick="dropClick5()" class="w3-padding-16" href="javascript:void(0)">About <i class="fa fa-caret-down"></i></a>
+			<div id="about" class="w3-dropdown-content w3-card-4">
+				<a class="w3-padding-16" href="about.html">About CSE Club</a>
+				<a class="w3-padding-16" href="construction.html">Hangouts</a>
+				<a class="w3-padding-16" href="contact.html">Contact Us</a>
+			</div>
+		</li>
+	</ul>
