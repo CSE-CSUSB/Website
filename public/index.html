@@ -1,88 +1,105 @@
+<!DOCTYPE html>
 
-<!doctype html>
-<!-- Modified For ReRouting -->
-<html>
-    <head>
-    <title>CSE Club at CSU, San Bernardino</title>
-    <meta name='description' content='The official website of the Computer Science and Engineering Club of CSU, San Bernardino.'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='author' href='humans.txt'>
-    <link rel='stylesheet' href='../assets/css/main.css'>
-    <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
-  </head>
+<!-- Allows reference to other html. Function call at bottom. -->
+<script src="w3data.js"></script>
 
-  <body>
-    <header>
-      <h1>
-        <a href='/'>CSE Club</a>
-      </h1>
-    </header>
+<div w3-include-html="header.html"></div> 
 
-    <section id="featured">
-        <div>
-            <img src='../assets/img/logo.png' />
-            <h2>Site Has Moved</h2>
-            <p>Please <a href="https://orgsync.com/89096/chapter">Click Here</a> To Goto Our OrgSync Page.</p>
-        </div>
+<!-- Availability Poll -->
+<div class="w3-card w3-orange w3-center w3-hover-shadow" style="background:orange; width:60%; margin: 0 auto;">
+  <h2><a href="http://doodle.com/poll/2cw2ydzptkahfnq7" target="_blank" style="text-decoration:none; color: white">Click here to choose our meeting times!</a></h2>
+</div>
 
-        
-    </section>
-    <footer class='copyright'>
-        Copyright &copy; 2014 by the Computer Science &amp; Engineering Club at California State University, San Bernardino.
-    </footer>
-  </body>
-</html>
+<!-- Feature Cards -->
 
-<!--<html class='no-js'>
-  <head>
-    <title>CSE Club at CSU, San Bernardino</title>
-    <meta name='description' content='The official website of the Computer Science and Engineering Club of CSU, San Bernardino.'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='author' href='humans.txt'>
-    <link rel='stylesheet' href='assets/css/main.css'>
-    <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
-  </head>
-  
-  <body>
-    <header>
-      <h1>
-        <a href='/'>CSE Club</a>
-      </h1>
-      <nav>
-        <a href='/workshops'>Workshops</a>
-        <a href='https://github.com/CSE-CSUSB'>Projects</a>
-        <a href='/tutoring'>Tutoring</a>
-        <a href='/error/construction.html'>Learn</a>
-        <a href='/calendar'>Calendar</a>
-        <a href='/error/construction.html'>About</a>
-      </nav>
-    </header>
+<!-- Tutoring -->
+<div class="w3-row-padding w3-center w3-margin-top">
+  <a href="tutoring.html" style="text-decoration:none">
+    <div class="w3-third">
+      <div class="w3-card-2 w3-padding-top w3-hover-shadow" style="min-height:400px">
+        <h4>Peer Tutoring</h4><br>
+        <i class="fa fa-graduation-cap w3-margin-bottom w3-text-black" style="font-size:120px"></i>
+        <p>Personalized</p>
+        <p>Effective</p>
+        <p>Free</p>
+      </div>
+    </a>
+  </div>
 
-    <main>
-      <section id='featured'>
-        <div>
-          <h2>CSUSB ACM/IEEE</h2>
-          <canvas id='life' width='400px' height='200px'></canvas>
-          <p>
-            We represent the student chapters for the <a href='https://acm.org'>Association for Computing Machinery (ACM)</a> and the <a href='https://www.ieee.org'>Institute of Electrical and Electronics Engineers (IEEE)</a> at <a href='https://csusb.edu'>CSU, San Bernardino</a>.
-          </p>
-          <p>
-            Our mission is to provide hands-on learning opportunities, build a strong professional network, and have a little fun while exploring our passion!
-          </p>
-          <p class='button-box'>
-            <a class='blue-button' href='https://goo.gl/forms/7Gh140ozAj8XTYBS2'>Application</a>
-            <a class='facebook' href='https://www.facebook.com/groups/csec.sb/'>Facebook</a>
-            <a class='linkedin' href=''>LinkedIn</a>
-            <a class='github' href='https://github.com/CSE-CSUSB'>GitHub</a>
-          </p>
-        </div>
+  <!-- Announcments -->
+  <div class="w3-third">
+    <a href="announcements.html" style="text-decoration:none">
+      <div class="w3-card-2 w3-padding-top w3-hover-shadow" style="min-height:400px">
+        <h4>Announcements</h4><br>
+        <i class="fa fa-bullhorn w3-margin-bottom w3-text-red" style="font-size:120px"></i>
+        <p>Club, Department, and Student Updates</p>
+      </div>
+    </a>
+  </div>
 
-        <footer class='copyright'>
-          Copyright &copy; 2014 by the Computer Science &amp; Engineering Club at California State University, San Bernardino.
-        </footer>
-      </section>
-    </main>
-    <script src='assets/js/main.js'></script>
-  </body>
-</html>-->
+  <!-- Jobs -->
+  <div class="w3-third">
+    <a href="jobs.html" style="text-decoration:none">
+      <div class="w3-card-2 w3-padding-top w3-hover-shadow" style="min-height:400px">
+      <h4>Work &amp; Research Opportunities</h4><br>
+        <i class="fa fa-money w3-margin-bottom w3-text-green" style="font-size:120px"></i>
+        <p>Build Student-Faculty Relationships</p>
+        <p>Begin your Career Path</p>
+        <p>Earn Recognition</p>
+        <p>Develop your Professional Network</p>
+      </div>
+    </div>
+  </a>
+</div>
 
+<!-- Workshops and Presentations -->
+<div class="w3-row-padding w3-center w3-margin-top">
+  <a href="workshops_presentations.html" style="text-decoration:none">
+    <div class="w3-third">
+      <div class="w3-card-2 w3-padding-top w3-hover-shadow" style="min-height:400px">
+        <h4>Workshops &amp; Presentations</h4><br>
+        <i class="fa fa-desktop w3-margin-bottom w3-text-grey" style="font-size:120px"></i>
+        <p>New Technology</p>
+        <p>Industry Skills</p>
+        <p>Networking</p>
+        <p>Problem Solving</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Projects -->
+  <div class="w3-third">
+    <a href="projects.html" style="text-decoration:none">
+      <div class="w3-card-2 w3-padding-top w3-hover-shadow" style="min-height:400px">
+        <h4>Projects</h4><br>
+        <i class="fa fa-gears w3-margin-bottom w3-text-purple" style="font-size:120px"></i>
+        <p>Resume Builder</p>
+        <p>Team Building</p>
+        <p>Version Control</p>
+        <p>Hands-On Experience</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Events -->
+  <div class="w3-third">
+    <a href="events.html" style="text-decoration:none">
+      <div class="w3-card-2 w3-padding-top w3-hover-shadow" style="min-height:400px">
+        <h4>Events</h4><br>
+        <i class="fa fa-globe w3-margin-bottom w3-text-blue" style="font-size:120px"></i>
+        <p>Contests</p>
+        <p>Conferences</p>
+        <p>Meetups</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<hr>
+
+<div w3-include-html="footer.html"></div> 
+
+<!-- imports other html -->
+<script>
+  w3IncludeHTML();
+</script>
