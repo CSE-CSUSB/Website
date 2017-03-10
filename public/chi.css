@@ -1,0 +1,28 @@
+.chi-banner {
+  text-align: center;
+  overflow: auto;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+
+.chi-banner img {
+  display: inline;
+  float: left;
+  text-align: center;
+}
+.chi-banner h3 h4 {
+  float: left;
+  display: inline;
+  text-align: center;
+}
+h1 h2 h3 h4 h5 {
+  margin: 0px !important;
+  padding: 0px !important;
+
+}
+
+body {
+  text-align: center;
+}

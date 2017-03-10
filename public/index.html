@@ -1,16 +1,28 @@
 <!DOCTYPE html>
+<head>
+
 
 <!-- Allows reference to other html. Function call at bottom. -->
 <script src="w3data.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  $(function() {
+    $("#header").load("header.html");
+  });
 
-<div w3-include-html="header.html"></div>
+</script>
+</head>
+<body>
+<div id="header"></div>
 
-<!-- Availability Poll -->
+<!--
+Availability Poll
 <div class="w3-card w3-orange w3-center w3-hover-shadow" style="background:orange; width:60%; margin: 0 auto;">
   <h2><a href="http://doodle.com/poll/xtnwt89w393qeyy8" target="_blank" style="text-decoration:none; color: white">Click here to help us choose our meeting times!</a></h2>
-</div>
+</div>-->
 
 <hr>
+
 
 <!-- Feature Cards -->
 
@@ -99,9 +111,11 @@
 
 <hr>
 
-<div w3-include-html="footer.html"></div> 
+<div w3-include-html="footer.html"></div>
 
 <!-- imports other html -->
 <script>
   w3IncludeHTML();
 </script>
+</body>
+</html>

@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-
+<head>
 <!-- Allows reference to other html. Function call at bottom. -->
-<script src="/w3data.js"></script>
-
-<div w3-include-html="header.html"></div>
-
+<script src="w3data.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  $(function() {
+    $("#header").load("header.html");
+  });
+</script>
+</head>
+<body>
+<div id="header"></div>
 <hr>
 
 <div class="w3-center">
@@ -14,7 +20,7 @@
 
 <hr>
 
-<div w3-include-html="footer.html"></div> 
+<div w3-include-html="footer.html"></div>
 
 <!-- imports other html -->
 <script>
