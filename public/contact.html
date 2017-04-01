@@ -14,13 +14,14 @@
 </head>
 <body>
 <div id="header"></div>
-
-<<div class="w3-content w3-display-container" style="width:800px">
-  <img class="mySlides" src="images/03092017_1.jpg" style="width:100%">
-  <img class="mySlides" src="images/03092017_2.jpg" style="width:100%">
-
-  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+<div style="background-color: #dcdee2;">
+  <div class="w3-content w3-display-container" style="width:800px">
+    <img class="mySlides" src="images/03092017_1.jpg" style="width:100%">
+    <img class="mySlides" src="images/03092017_2.jpg" style="width:100%">
+  
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
 </div>
   <!-- Content -->
 <script>
@@ -44,7 +45,7 @@ function showDivs(n) {
 </script>
   <div class="w3-row-padding w3-center w3-margin-top">
 
-    <div class="w3-half">
+        <div style="width: 24.99%; display:  inline-block;">
           <div class="w3-card white">
             <div class="w3-container w3-theme-d2">
               <h3>General Contact Info</h3>
@@ -70,60 +71,57 @@ function showDivs(n) {
           </div>
         </div>
 
-        <div class="w3-half">
-          <table class="w3-table w3-striped w3-bordered">
-            <thead>
-              <tr class="w3-theme-d2">
-                <th>Officer</th>
-                <th>Name</th>
-                <th>Email</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="w3-white">
-                <td>CSE Club Officers</td>
-                <td>Officers</td>
-                <td><a href="mailto:cse.csusb@gmail.com">cse.csusb@gmail.com</a></td>
-              </tr>
-              <tr class="w3-white">
-                <td>President / IEEE Representative</td>
-                <td>Sean Hamilton</td>
-                <td><a href="mailto:president.cse.csusb@gmail.com">president.cse.csusb@gmail.com</a></td>
-              </tr>
-              <tr class="w3-white">
-                <td>Vice President / ACM Representative</td>
-                <td>Juan Nevares</td>
-                <td><a href="mailto:vicepresident.cse.csusb@gmail.com">vicepresident.cse.csusb@gmail.com</a></td>
-              </tr>
-              <tr class="w3-white">
-                <td>Treasurer</td>
-                <td>Arusyak Hovhannesyan</td>
-                <td><a href="mailto:treasurer.cse.csusb@gmail.com">treasurer.cse.csusb@gmail.com</a></td>
-              </tr>
-              <tr class="w3-white">
-                <td>Secretary</td>
-                <td>Carlos Zepeda</td>
-                <td><a href="mailto:secretary.cse.csusb@gmail.com">secretary.cse.csusb@gmail.com</a></td>
-              </tr>
-              <tr class="w3-white">
-                <td>Information Officer</td>
-                <td>Joshua Marsden</td>
-                <td><a href="mailto:information.cse.csusb@gmail.com">information.cse.csusb@gmail.com</a></td>
-              </tr>
-              <tr class="w3-white">
-                <td>Webmaster</td>
-                <td>Daehan Chi</td>
-                <td><a href="mailto:webmaster.cse.csusb@gmail.com">webmaster.cse.csusb@gmail.com</a></td>
-              </tr>
-              <tr class="w3-white">
-                <td>Events Coordinator</td>
-                <td> Andrew Price </td>
-                <td><a href="mailto:events.cse.csusb@gmail.com">events.cse.csusb@gmail.com</a></td>
-              </tr>
-            </tbody>
-          </table>
-          <p> Send an email to <a href="mailto:cse.csusb@gmail.com">cse.csusb@gmail.com</a> to apply for open positions! </p>
+        <!--<div class="w3-half" style="display: inline-block;">-->
+        <div style="width: 40%; display:  inline-block; vertical-align:top;">
+          <div class="w3-container w3-theme-d2">
+            <h3>2016-2017 CSE Club Officer Info</h3>
+          </div>
+          <ul class="w3-ul w3-card-4">
+            <li class="w3-padding-16">
+              <img src="images/03092017_6.jpg" class="w3-left w3-circle w3-margin-right" style="width:80px; height:80px;">
+              <span class="w3-xlarge">Sean Hamilton</span><br>
+              <span>President / IEEE Representative</span><br>
+              <span><a href="mailto:president.cse.csusb@gmail.com">president.cse.csusb@gmail.com</a></span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="images/03092017_8.jpg" class="w3-left w3-circle w3-margin-right" style="width:80px; height:80px;">
+              <span class="w3-xlarge">Juan Nevares</span><br>
+              <span>Vice President / ACM Representative</span><br>
+              <span><a href="mailto:vicepresident.cse.csusb@gmail.com">vicepresident.cse.csusb@gmail.com</a></span>
+            </li>  
+            <li class="w3-padding-16">
+              <img src="images/03092017_7.jpg" class="w3-left w3-circle w3-margin-right" style="width:80px; height:80px">
+              <span class="w3-xlarge">Arusyak Hovhannesyan</span><br>
+              <span>Treasurer</span><br>
+              <span><a href="mailto:treasurer.cse.csusb@gmail.com">treasurer.cse.csusb@gmail.com</a></span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="images/03092017_11.jpg" class="w3-left w3-circle w3-margin-right" style="width:80px; height:80px">
+              <span class="w3-xlarge">Carlos Zepeda</span><br>
+              <span>Secretary</span><br>
+              <span><a href="mailto:secretary.cse.csusb@gmail.com">secretary.cse.csusb@gmail.com</a></span>
+            </li> 
+            <li class="w3-padding-16">
+              <img src="images/03092017_9.jpg" class="w3-left w3-circle w3-margin-right" style="width:80px; height:80px">
+              <span class="w3-xlarge">Joshua Marsden</span><br>
+              <span>Information Officer</span><br>
+              <span><a href="mailto:information.cse.csusb@gmail.com">information.cse.csusb@gmail.com</a></span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="images/03092017_12.jpg" class="w3-left w3-circle w3-margin-right" style="width:80px; height:80px">
+              <span class="w3-xlarge">Daehan Chi</span><br>
+              <span>Webmaster</span><br>
+              <span><a href="mailto:webmaster.cse.csusb@gmail.com">webmaster.cse.csusb@gmail.com</a></span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="images/03092017_13.jpg" class="w3-left w3-circle w3-margin-right" style="width:80px; height:80px">
+              <span class="w3-xlarge">Events Coordinator</span><br>
+              <span>Andrew Price</span><br>
+              <span><a href="mailto:events.cse.csusb@gmail.com">events.cse.csusb@gmail.com</a></span>
+            </li>
+          </ul>
         </div>
+        <p> Send an email to <a href="mailto:cse.csusb@gmail.com">cse.csusb@gmail.com</a> to apply for open positions! </p>
       </div>
   </div>
 
