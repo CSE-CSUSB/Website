@@ -1,0 +1,115 @@
+<table class="w3-table w3-striped w3-bordered">
+    <thead>
+      <tr class="w3-theme-d2">
+        <th>Day</th>
+        <th>Time</th>
+        <th>Tutor</th>
+        <th>Classes Being Tutored</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    <!-- Monday -->
+      <tr class="w3-white">
+       <td rowspan="4">Monday</td>
+       <td>11:30 PM - 1:00 PM</td>
+       <td>Humberto R.</td>
+       <td>CSE 201</td>
+     </tr>
+     <tr class="w3-white">
+       <td>1:00 PM - 2:00 PM</td>
+       <td>Ryan</td>
+       <td>CSE 125, 201, 202, 310, 313, 330, 455, 460</td>
+     </tr>
+     <tr class="w3-white">
+       <td>2:00 PM - 3:30 PM</td>
+       <td>Seth</td>
+       <td>N/A</td>
+     </tr>
+     <tr class="w3-white">
+       <td>3:00 PM - 4:30 PM</td>
+       <td>Sheeraz</td>
+       <td>CSE 201</td>
+     </tr>
+    <!-- Tuesday -->
+      <tr class="w3-white">
+      <td rowspan="4">Tuesday</td>
+        <td>11:00 AM - 12:30 PM</td>
+        <td>Seth</td>
+        <td>N/A</td>
+      </td>
+      <tr class="w3-white">
+        <td>12:30 PM - 2:00 PM</td>
+        <td>Kyle B.</td>
+        <td>CSE 125, 201, 202, 313, 330</td>
+      </tr>
+      <tr class="w3-white">
+        <td>2:00 - 3:00 PM</td>
+        <td>Ryan</td>
+        <td>CSE 125, 201, 202, 310, 313, 330, 455, 460</td>
+      </tr>
+      <tr class="w3-white">
+        <td>1:00 PM - 4:30 PM</td>
+        <td>Miguel S.</td>
+        <td>CSE 201, 202, 310, 330, 431, 460</td>
+      </tr>
+
+
+    <!-- Wednesday -->
+      <tr class="w3-white">
+        <td rowspan="3">Wednesday</td>
+        <td>1:00 PM - 2:00 PM</td>
+        <td>Miguel S.</td>
+        <td>CSE 201, 202, 310, 330, 431, 460</td>
+      </tr>
+      <tr class="w3-white">
+        <td>2:00 PM - 3:00 PM</td>
+        <td>Seth</td>
+        <td>N/A</td>
+      </tr>
+      <tr class="w3-white">
+        <td>3:00 PM - 4:30 PM</td>
+        <td>Kyle B.</td>
+        <td>CSE 125, 201, 202, 313, 330</td>
+      </tr>
+
+      <!-- Thursday -->
+      <tr class="w3-white">
+        <td rowspan="4">Thursday</td>
+        <td>11:00 AM - 12:30 PM</td>
+        <td>Seth</td>
+        <td>N/A</td>
+      </tr>
+      <tr class="w3-white">
+        <td>12:30 PM - 2:00 PM</td>
+        <td>Kyle B.</td>
+        <td>CSE 125, 201, 202, 313, 330</td>
+      </tr>
+      <tr class="w3-white">
+        <td>2:00 PM - 3:00 PM</td>
+        <td>Ryan</td>
+        <td>CSE 125, 201, 202, 310, 313, 330, 455, 460</td>
+      </tr>
+      <tr class="w3-white">
+        <td>3:00 PM - 4:30 PM</td>
+        <td>Miguel S.</td>
+        <td>CSE 201, 202, 310, 330, 431, 460</td>
+      </tr>
+
+    <!-- Friday -->
+    <tr class="w3-white">
+      <td rowspan="2">Friday</td>
+      <td>2:00 PM - 3:00 PM</td>
+      <td>Sheeraz</td>
+      <td>CSE 201</td>
+    </tr>
+    <tr class="w3-white">
+      <td>3:00 PM - 4:30 PM</td>
+      <td>Humberto R.</td>
+      <td>CSE 201</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Club Room Invitiation -->
+<p>Even if you are unable to make it to the available tutoring hours, visit the club room anyway. Several helpful members are willing and able to share their knowledge!</p>

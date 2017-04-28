@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+<!-- Allows reference to other html. Function call at bottom. -->
+<script src="w3data.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  $(function() {
+    $("#header").load("header.html");
+  });
+</script>
+</head>
+<body>
+<div id="header"></div>
+<!-- Tutoring Schedule -->
+
+<div class="w3-container w3-center" style="width:60%; margin:0 auto">
+  <h2>Tutoring Schedule Spring 2017 - JB 357</h2>
+  <table class="w3-table w3-striped w3-bordered">
+    <thead>
+      <tr class="w3-theme-d2">
+        <th>Day</th>
+        <th>Time</th>
+        <th>Tutor</th>
+        <th>Classes Being Tutored</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    <!-- Monday -->
+      <tr class="w3-white">
+       <td rowspan="1">Monday</td>
+       <td>1:00 PM - 3:30 PM</td>
+       <td>Ryan P.</td>
+       <td>CSE 125, 201, 202, 310, 313, 330, 455,460</td>
+     </tr>
+    <!-- Tuesday -->
+      <tr class="w3-white">
+      <td rowspan="2">Tuesday</td>
+        <td>9:00 AM - 12:00 PM</td>
+        <td>Seth L.</td>
+        <td>N/A</td>
+      </td>
+      <tr class="w3-white">
+        <td>4:30 PM - 6:30 PM</td>
+        <td>Ryan P.</td>
+        <td>CSE 125, 201, 202, 310, 313, 330, 455,460</td>
+      </tr>
+    <!-- Wednesday -->
+      <tr class="w3-white">
+        <td rowspan="3">Wednesday</td>
+        <td>1:00 PM - 3:30 PM</td>
+        <td>Ryan P.</td>
+        <td>CSE 125, 201, 202, 310, 313, 330, 455,460</td>
+      </tr>
+      <tr class="w3-white">
+        <td>4:00 PM - 5:00 PM</td>
+        <td>Humberto R.</td>
+        <td>CSE 201</td>
+      </tr>
+      <tr class="w3-white">
+        <td>9:00 PM - 10:00 PM</td>
+        <td>Seth L.</td>
+        <td>N/A</td>
+      </tr>
+
+      <!-- Thursday -->
+      <tr class="w3-white">
+        <td rowspan="1">Thursday</td>
+        <td>9:00 AM - 12:00 PM</td>
+        <td>Seth L.</td>
+        <td>N/A</td>
+      </tr>
+    <!-- Friday -->
+    <tr class="w3-white">
+      <td rowspan="2">Friday</td>
+      <td>11:30 PM - 2:30 PM</td>
+      <td>Humberto R.</td>
+      <td>CSE 201</td>
+    </tr>
+    <tr class="w3-white">
+      <td>2:30 PM - 4:00 PM</td>
+      <td>Miguel S.</td>
+      <td>CSE 201, 202, 310, 330, 431, 460</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Club Room Invitiation -->
+<p>Even if you are unable to make it to the available tutoring hours, visit the club room anyway. Several helpful members are willing and able to share their knowledge!</p>
+
+<!-- Tutor Application -->
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfNwjfcOzPPpPnwN75atEKQiDM9a8W827Jge8_LOexYhCkD2w/viewform?c=0&w=1"target="_blank">Apply</a> to be a CSE Club Tutor!</p>
+</div>
+
+<hr>
+
+<div w3-include-html="footer.html"></div>
+
+<!-- imports other html -->
+<script>
+  w3IncludeHTML();
+</script>
