@@ -1,0 +1,10 @@
+/bootstrap/compiled.php
+/vendor
+/app/config
+/service-hook
+composer.phar
+composer.lock
+.DS_Store
+votes.txt
+members.txt
+candidates.txt
