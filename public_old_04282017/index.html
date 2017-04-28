@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Allows reference to other html. Function call at bottom. -->
+<script src="w3data.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  $(function() {
+    $("#header").load("header.html");
+  });
+
+</script>
+</head>
+<body>
+  
+<div id="header"></div>
+<div style="background-color: #dcdee2;">
+  <div class="w3-content w3-display-container" style="max-width:90%; max-height: 300px;">
+    <a target="_blank" href="https://goo.gl/UvPRS0">
+      <img class="mySlides" src="images/main_1.jpg" style="width:100%; height: 300px;">
+    </a>
+    <a target="_blank" href="public_files/cse_handout.pdf">
+      <img class="mySlides" src="images/main_2.jpg" style="width:100%; height: 300px;">
+    </a>
+  </div>
+</div>
+<!--
+<div style="background-color: #dcdee2;">
+  <div class="w3-content w3-section" style="width:100%; max-height: 300px">
+    <a target="_blank" href="public_files/futures in engineering conference_handout.pdf">
+      <img class="mySlides" src="images/main_1.jpg" style="width:100%; height: 300px;">
+    </a>
+    <a target="_blank" href="public_files/cse_handout.pdf">
+      <img class="mySlides" src="images/main_2.jpg" style="width:100%; height: 300px;">
+    </a>
+  </div>
+</div>
+-->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1;}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+
+</script>
+
+
+<!-- Feature Cards -->
+
+<!-- Tutoring -->
+<div class="w3-row-padding w3-center w3-margin-top">
+  <a href="tutoring.html" style="text-decoration:none">
+    <div class="w3-third">
+      <div class="w3-card-2 w3-padding-top w3-hover-shadow" style="min-height:400px">
+        <h4>Peer Tutoring</h4><br>
+        <i class="fa fa-graduation-cap w3-margin-bottom w3-text-black" style="font-size:120px"></i>
+        <p>Personalized</p>
+        <p>Effective</p>
+        <p>Free</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Announcments -->
+  <div class="w3-third">
+    <a href="announcements.html" style="text-decoration:none">
+      <div class="w3-card-2 w3-padding-top w3-hover-shadow" style="min-height:400px">
+        <h4>Announcements</h4><br>
+        <i class="fa fa-bullhorn w3-margin-bottom w3-text-red" style="font-size:120px"></i>
+        <p>Club, Department, and Student Updates</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Jobs -->
+  <div class="w3-third">
+    <a href="jobs.html" style="text-decoration:none">
+      <div class="w3-card-2 w3-padding-top w3-hover-shadow" style="min-height:400px">
+      <h4>Work &amp; Research Opportunities</h4><br>
+        <i class="fa fa-money w3-margin-bottom w3-text-green" style="font-size:120px"></i>
+        <p>Build Student-Faculty Relationships</p>
+        <p>Begin your Career Path</p>
+        <p>Earn Recognition</p>
+        <p>Develop your Professional Network</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- Workshops and Presentations -->
+<div class="w3-row-padding w3-center w3-margin-top">
+  <a href="workshops_speakers.html" style="text-decoration:none">
+    <div class="w3-third">
+      <div class="w3-card-2 w3-padding-top w3-hover-shadow" style="min-height:400px">
+        <h4>Workshops &amp; Presentations</h4><br>
+        <i class="fa fa-desktop w3-margin-bottom w3-text-grey" style="font-size:120px"></i>
+        <p>New Technology</p>
+        <p>Industry Skills</p>
+        <p>Networking</p>
+        <p>Problem Solving</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Projects -->
+  <div class="w3-third">
+    <a href="projects.html" style="text-decoration:none">
+      <div class="w3-card-2 w3-padding-top w3-hover-shadow" style="min-height:400px">
+        <h4>Projects</h4><br>
+        <i class="fa fa-gears w3-margin-bottom w3-text-purple" style="font-size:120px"></i>
+        <p>Resume Builder</p>
+        <p>Team Building</p>
+        <p>Version Control</p>
+        <p>Hands-On Experience</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Events -->
+  <div class="w3-third">
+    <a href="events.html" style="text-decoration:none">
+      <div class="w3-card-2 w3-padding-top w3-hover-shadow" style="min-height:400px">
+        <h4>Events</h4><br>
+        <i class="fa fa-globe w3-margin-bottom w3-text-blue" style="font-size:120px"></i>
+        <p>Contests</p>
+        <p>Conferences</p>
+        <p>Meetups</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<hr>
+
+<div w3-include-html="footer.html"></div>
+
+<!-- imports other html -->
+<script>
+  w3IncludeHTML();
+</script>
+</body>
+</html>
