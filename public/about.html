@@ -1,354 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<head>
+<!-- Allows reference to other html. Function call at bottom. -->
+<script src="w3data.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  $(function() {
+    $("#header").load("header.html");
+  });
+</script>
+</head>
+<body>
+<div id="header"></div>
 
-    <head>
+<div class="w3-row-padding w3-center w3-margin-top" >
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-        <title>Modern Business - Start Bootstrap Template</title>
-
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link href="css/modern-business.css" rel="stylesheet">
-
-        <!-- Custom Fonts -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    </head>
-
-    <body>
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                    <a class="navbar-brand" href="index.html">CSE Club</a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Join CSE Club<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="req_member.html">Member Application</a>
-                                </li>
-                                <li>
-                                    <a href="req_newsletter.html">Newsletter Signup</a>
-                                </li>
-                                <li>
-                                    <a href="req_announcement.html">Announcement Request</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="tutoring.html">Peer Tutoring</a>
-                                </li>
-                                <li>
-                                    <a href="officeHour.html">Office Hours</a>
-                                </li>
-                                <li>
-                                    <a href="projects.html">Projects</a>
-                                </li>
-                                <li>
-                                    <a href="announcement.html">Announcement</a>
-                                </li>
-                                <li>
-                                    <a href="workshop.html">Workshop Documents</a>
-                                </li>
-                                <li>
-                                    <a href="job.html">Job Posting</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="meetingHistory.html">Meeting History</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="http://www.ieee.org/membership_services/membership/join/index.html" target="_blank">IEEE</a>
-                                </li>
-                                <li>
-                                    <a href="http://www.acm.org/membership/join-acm" target="_blank">Association for Computing Machinery</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.nspe.org/membership/join-now" target="_blank">National Society of Professional Engineers</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="calendar.html">Calendar</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="about.html">About CSE Club</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+    <div style="width:60%; margin: 0 auto">
+          <div class="w3-card white">
+            <div class="w3-container w3-theme-d2">
+              <h3>The CSE Club: 3 in 1</h3>
             </div>
-            <!-- /.container -->
-        </nav>
-
-        <!-- Page Content -->
-        <div class="container">
-
-            <!-- Page Heading/Breadcrumbs -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">About CSE Club</h1>
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a>
-                        </li>
-                        <li class="active">About</li>
-                    </ol>
-                </div>
+            <div class="w3-container">
+              <h3 class="w3-text-theme">CSE Club @ CSUSB</h3>
+              <p>The Computer Science &amp; Engineering (CSE) Club at CSUSB is a club for students with an interest in computer science, engineering, systems, and bioinformatics. We work to provide educational and professional opportunities for students in computing and engineering fields, including free tutoring, an expansive library of textbooks, and regular workshops. Our members are often found in our club room, JB 357; feel free to come by!</p>
             </div>
-            <!-- /.row -->
-
-            <!-- Intro Content -->
-            <div class="row page-header">
-                <div class="col-md-6">
-                    <img class="img-responsive" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="/images/officers/03092017_5.jpg" />
-                </div>
-                <div class="col-md-6">
-                    <h2>CSE Club @ CSUSB</h2>
-                    <p>The Computer Science & Engineering (CSE) Club at CSUSB is a club for students with an interest in computer science, engineering, systems, and bioinformatics. We work to provide educational and professional opportunities for students
-                        in computing and engineering fields, including free tutoring, an expansive library of textbooks, and regular workshops. Our members are often found in our club room, JB 357; feel free to come by!
-                    </p>
-                </div>
-            </div>
-            <div class="row page-header">
-                <div class="col-md-6">
-                    <img class="img-responsive" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="/images/logo.gif" />
-                </div>
-                <div class="col-md-6">
-                    <h2>CSUSB IEEE Student Branch</h2>
-                    <p>The CSE Club is CSUSB's Institute of Electrical and Electronics Engineers (IEEE) Student Branch. As an IEEE Student Branch, the CSE Club regularly participates in the IEEE Region 6 Foothill Section's activities and promotes professional
-                        growth and networking between our members and the IEEE community.
-                    </p>
-                </div>
-            </div>
-            <div class="row page-header">
-                <div class="col-md-6">
-                    <img class="img-responsive" align="middle" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="/images/acm_logo.png" />
-                </div>
-                <div class="col-md-6">
-                    <h2>CSUSB ACM Student Chapter</h2>
-                    <p>The CSE Club is CSUSB's Association for Computing Machinery's Student Chapter. We actively report our activities to ACM and promote participation in ACM-hosted activities such as competitive programming and professional outreach.
-                    </p>
-                </div>
-            </div>
-            <!-- /.row -->
-
-            <!-- Team Members -->
-            <div class="row">
-
-
-                <div class="col-lg-12">
-                    <h2 class="page-header">Constitution and Bylaws</h2>
-                </div>
-                <div class="w3-image">
-                    <embed src="./public_files/CSE Club Constitution and Bylaws 2016-2017.pdf" width="100%" height=792px type='application/pdf'></embed>
-                </div>
-                <!--
-                <div class="col-md-4 text-center">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                        <div class="caption">
-                            <h3>John Smith<br>
-                                <small>Job Title</small>
-                            </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                            <ul class="list-inline">
-                                <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                        <div class="caption">
-                            <h3>John Smith<br>
-                                <small>Job Title</small>
-                            </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                            <ul class="list-inline">
-                                <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                        <div class="caption">
-                            <h3>John Smith<br>
-                                <small>Job Title</small>
-                            </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                            <ul class="list-inline">
-                                <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                        <div class="caption">
-                            <h3>John Smith<br>
-                                <small>Job Title</small>
-                            </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                            <ul class="list-inline">
-                                <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                        <div class="caption">
-                            <h3>John Smith<br>
-                                <small>Job Title</small>
-                            </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                            <ul class="list-inline">
-                                <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="thumbnail">
-                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                        <div class="caption">
-                            <h3>John Smith<br>
-                                <small>Job Title</small>
-                            </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                            <ul class="list-inline">
-                                <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>-->
-            </div>
-            <!-- /.row -->
-
-            <!-- Our Customers -->
-            <!--
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="page-header">Our Customers</h2>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
-                </div>
-            </div>-->
-            <!-- /.row -->
-
-            <hr>
-
-            <!-- Footer -->
-            <footer>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>Copyright &copy; 2017 by the Computer Science and Engineering club at California State University, San Bernardino</p>
-                        <p>Powered by bootstrap.css</p>
-                    </div>
-                </div>
-            </footer>
-
+            <ul class="w3-ul w3-border-top">
+              <li>
+                <h3 class="w3-text-theme">CSUSB IEEE Student Branch</h3>
+                <p>The CSE Club is CSUSB's Institute of Electrical and Electronics Engineers (IEEE) Student Branch. As an IEEE Student Branch, the CSE Club regularly participates in the IEEE Region 6 Foothill Section's activities and promotes professional growth and networking between our members and the IEEE community.</p>
+              </li>
+              <li>
+                <h3 class="w3-text-theme">CSUSB ACM Student Chapter</h3>
+                <p>The CSE Club is CSUSB's Association for Computing Machinery's Student Chapter. We actively report our activities to ACM and promote participation in ACM-hosted activities such as competitive programming and professional outreach.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="w3-container w3-theme-d2">
+            <h3>Constitution and Bylaws 2016-2017</h3>
+          </div>
+          <div class="w3-image">
+            <embed src="./public_files/CSE Club Constitution and Bylaws 2016-2017.pdf" width="100%" height=792px type='application/pdf'></embed>
+          </div>
         </div>
-        <!-- /.container -->
+        </div>
 
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
+<hr>
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
+<!-- Footer -->
+<div w3-include-html="footer.html"></div>
 
-    </body>
-
-</html>
+<!-- imports other html -->
+<script>
+  w3IncludeHTML();
+</script>

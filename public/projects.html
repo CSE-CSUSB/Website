@@ -1,274 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
 
-    <head>
+<head>
+<!-- Allows reference to other html. Function call at bottom. -->
+<script src="w3data.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  $(function() {
+    $("#header").load("header.html");
+  });
+</script>
+</head>
+<body>
+<div id="header"></div>
+<!-- Feature Cards -->
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+<div class="w3-center">
+<h2>Active Projects</h2>
+</div>
 
-        <title>Modern Business - Start Bootstrap Template</title>
+<!-- Skyote -->
+<div class="w3-row-padding w3-center w3-margin-top">
+  <div class="w3-half">
+    <div class="w3-card-2 w3-padding-top" style="min-height:460px">
+      <h3>Skyote (quadcopter)</h3><br>
+      <i class="fa fa-desktop w3-margin-bottom w3-text-black" style="font-size:120px"></i>
+      <p>Design and build a quadrotor helicopter capable of autonomous flight and visual object tracking.</p>
+      <p><h5><b>Leader:</b> Sean Hamilton</h5></p>
+      <p><a href="https://github.com/CSE-CSUSB/Skyote--Quadcopter"target="_blank">git repo</a></p>
+    </div>
+  </div>
 
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Sports Bots -->
+  <div class="w3-half">
+    <div class="w3-card-2 w3-padding-top" style="min-height:460px">
+      <h3>Sports Bots</h3><br>
+      <i class="fa fa-futbol-o w3-margin-bottom w3-text-black" style="font-size:120px"></i>
+      <p>A robotics project where a user remotely controls a robot to play a simplified Soccer and Sumo games.</p>
+      <p><h5><b>Leader:</b> Carlos Zepeda</h5></p>
+      <p><a href="https://github.com/CSE-CSUSB/SportsBot"target="_blank">git repo</a></p>
+    </div>
+  </div>
+</div>
 
-        <!-- Custom CSS -->
-        <link href="css/modern-business.css" rel="stylesheet">
+<!-- Gameboy Emulator -->
+<div class="w3-row-padding w3-center w3-margin-top">
+  <div class="w3-half">
+    <div class="w3-card-2 w3-padding-top" style="min-height:460px">
+      <h3>Gameboy Emulator</h3><br>
+      <i class="fa fa-gamepad  w3-margin-bottom w3-text-black" style="font-size:120px"></i>
+      <p>A virtual machine that plays gameboy games!</p>
+      <p><h5><b>Leader:</b> Miguel Saldivar</h5></p>
+      <p><a href="https://github.com/CSE-CSUSB/gameboy-emulator"target="_blank">git repo</a></p>
+    </div>
+  </div>
 
-        <!-- Custom Fonts -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- New Project -->
+  <div class="w3-half">
+    <div class="w3-card-2 w3-padding-top" style="min-height:460px">
+      <h3>Start a Project</h3><br>
+      <i class="fa fa-paw w3-margin-bottom w3-text-black" style="font-size:120px"></i>
+      <p>Send an email with the subject line: "Project Proposal" to <a href="mailto:cse.csusb@gmail.com">cse.csusb@gmail.com</a> with your name, the project description, and how the project will benefit members of the club!</p>
+    </div>
+  </a>
+</div>
+</div>
 
-        <!-- Icons CSS -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<hr>
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<div w3-include-html="footer.html"></div>
 
-    </head>
-
-    <body>
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                    <a class="navbar-brand" href="index.html">CSE Club</a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Join CSE Club<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="req_member.html">Member Application</a>
-                                </li>
-                                <li>
-                                    <a href="req_newsletter.html">Newsletter Signup</a>
-                                </li>
-                                <li>
-                                    <a href="req_announcement.html">Announcement Request</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="tutoring.html">Peer Tutoring</a>
-                                </li>
-                                <li>
-                                    <a href="officeHour.html">Office Hours</a>
-                                </li>
-                                <li>
-                                    <a href="projects.html">Projects</a>
-                                </li>
-                                <li>
-                                    <a href="announcement.html">Announcement</a>
-                                </li>
-                                <li>
-                                    <a href="workshop.html">Workshop Documents</a>
-                                </li>
-                                <li>
-                                    <a href="job.html">Job Posting</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="meetingHistory.html">Meeting History</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="http://www.ieee.org/membership_services/membership/join/index.html" target="_blank">IEEE</a>
-                                </li>
-                                <li>
-                                    <a href="http://www.acm.org/membership/join-acm" target="_blank">Association for Computing Machinery</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.nspe.org/membership/join-now" target="_blank">National Society of Professional Engineers</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="calendar.html">Calendar</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="about.html">About CSE Club</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
-
-        <!-- Page Content -->
-        <div class="container">
-
-            <!-- Page Heading/Breadcrumbs -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Projects
-                        <small>Subheading</small>
-                    </h1>
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a>
-                        </li>
-                        <li class="active">projects</li>
-                    </ol>
-                </div>
-            </div>
-            <!-- /.row -->
-
-            <!-- Projects Row -->
-            <div class="row">
-                <div class="col-md-6 img-portfolio">
-                    <a href="https://github.com/CSE-CSUSB/Skyote--Quadcopter">
-                        <center><i class="material-icons" style="font-size:300px">toys</i></center>
-                    </a>
-                    <h3>
-                        <a href="https://github.com/CSE-CSUSB/Skyote--Quadcopter" target="_blank">Skyote (quadcopter)</a>
-                    </h3>
-                    <p>Design and build a quadrotor helicopter capable of autonomous flight and visual object tracking.</p>
-                    <p><b>Lead: Sean Hamilton</b></p>
-                </div>
-                <div class="col-md-6 img-portfolio">
-                    <a href="https://github.com/CSE-CSUSB/SportsBot">
-                        <center><i class="material-icons" style="font-size:300px">android</i></center>
-                    </a>
-                    <h3>
-                        <a href="https://github.com/CSE-CSUSB/SportsBot">Sports Bots</a>
-                    </h3>
-                    <p>A robotics project where a user remotely controls a robot to play a simplified Soccer and Sumo games.</p>
-                    <p><b>Lead: Carlos Zepeda</b></p>
-                </div>
-            </div>
-            <!-- /.row -->
-
-            <!-- Projects Row -->
-            <div class="row">
-                <div class="col-md-6 img-portfolio">
-                    <a href="https://github.com/CSE-CSUSB/gameboy-emulator">
-                        <center><i class="material-icons" style="font-size:300px">videogame_asset</i></center>
-                    </a>
-                    <h3>
-                        <a href="portfolio-item.html">Gameboy Emulator</a>
-                    </h3>
-                    <p>A virtual machine that plays gameboy games!</p>
-                    <p><b>Lead: Miguel Saldivar</b></p>
-                </div>
-                <div class="col-md-6 img-portfolio">
-                    <a href="mailto:president.cse.csusb@gmail.com">
-                        <center><i class="material-icons" style="font-size:300px">code</i></center>
-                    </a>
-                    <h3>
-                        <a href="mailto:president.cse.csusb@gmail.com">Start a Project</a>
-                    </h3>
-                    <p>Send an email with the subject line: "Project Proposal" to cse.csusb@gmail.com with your name, the project description, and how the project will benefit members of the club!</p>
-                </div>
-            </div>
-            <!-- /.row -->
-            <!-- Projects Row -->
-            <!--
-            <div class="row">
-                <div class="col-md-6 img-portfolio">
-                    <a href="portfolio-item.html">
-                        <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
-                    </a>
-                    <h3>
-                        <a href="portfolio-item.html">Project Five</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-                <div class="col-md-6 img-portfolio">
-                    <a href="portfolio-item.html">
-                        <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
-                    </a>
-                    <h3>
-                        <a href="portfolio-item.html">Project Six</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-            </div>-->
-            <!-- /.row -->
-
-            <hr>
-
-            <!-- Pagination -->
-            <!--
-            <div class="row text-center">
-                <div class="col-lg-12">
-                    <ul class="pagination">
-                        <li>
-                            <a href="#">&laquo;</a>
-                        </li>
-                        <li class="active">
-                            <a href="#">1</a>
-                        </li>
-                        <li>
-                            <a href="#">2</a>
-                        </li>
-                        <li>
-                            <a href="#">3</a>
-                        </li>
-                        <li>
-                            <a href="#">4</a>
-                        </li>
-                        <li>
-                            <a href="#">5</a>
-                        </li>
-                        <li>
-                            <a href="#">&raquo;</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>-->
-            <!-- /.row -->
-
-            <hr>
-
-            <!-- Footer -->
-            <footer>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>Copyright &copy; 2017 by the Computer Science and Engineering club at California State University, San Bernardino</p>
-                        <p>Powered by bootstrap.css</p>
-                    </div>
-                </div>
-            </footer>
-
-        </div>
-        <!-- /.container -->
-
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-
-    </body>
-
-</html>
+<!-- imports other html -->
+<script>
+  w3IncludeHTML();
+</script>
