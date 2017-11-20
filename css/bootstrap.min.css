@@ -134,6 +134,10 @@ samp {
     font-size: 1em
 }
 
+cursive {
+    font-family: cursive;
+    font-style: italic;
+}
 button,
 input,
 optgroup,
