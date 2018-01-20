@@ -7752,7 +7752,11 @@ button.close {
 .modal-footer:after {
   clear: both;
 }
-
+.div1289{
+    float:right;
+    text-align: right;
+    padding-left:12em;
+}
 .center-block {
   display: block;
   margin-right: auto;
