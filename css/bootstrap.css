@@ -12,7 +12,8 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-
+div.container { background: transparent; }
+div.lockframe { z-index: -2; }
 body {
   margin: 0;
 }
