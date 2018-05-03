@@ -345,17 +345,10 @@
                <figure>
   <figcaption>Exercise 1</figcaption>
   <pre>
-<code>#include &lt;iostream&gt;
-
-using namespace std;
-
-int main(int argc, char* argv[]) {
-	int iterations = 10;
-	for(int i = 0, j = iterations / 2 - 1; i &lt; iterations; i++, j--) {
-			cout &lt;&lt; i / j &lt;&lt; endl;
-	}
-    system("pause");
-    return 0;
+<code>int iterations = 10;
+for(int i = 0, j = iterations / 2 - 1; i &lt; iterations; i++, j--) 
+{
+    cout &lt;&lt; i / j &lt;&lt; endl;
 }
 </code></pre>
 </figure>
@@ -374,7 +367,7 @@ int main()
 	book1.addPerson("Rufus", "951-777-7777");
 	book1.addPerson("George", "909-333-9865");
 	book1.addPerson("Bob", "760-321-1234");
-	book1.findPerson("bob ");
+	book1.findPerson("Bob");
 
 	system("Pause");
 	return 0;
@@ -444,18 +437,16 @@ void PhoneBook::findPerson(string name)
 		if (book[i].name == name)
 		{
 			printPerson(book[i]);
+                        return;
 		}
-
 	}
+        cout &lt;&lt; name &lt;&lt; " wasn't found in the phonebook!" &lt;&lt; endl;
 }
+
 // prints out a single persons information
 void PhoneBook::printPerson(Person p)
 {
-	cout &lt;&lt; endl;
-	cout &lt;&lt; "================================" &lt;&lt; endl;
-	cout &lt;&lt; "Name: \t" &lt;&lt; p.name &lt;&lt; endl;
-	cout &lt;&lt; "Phone: \t" &lt;&lt; p.phoneNumber &lt;&lt; endl;
-	cout &lt;&lt; "================================" &lt;&lt; endl;
+    cout &lt;&lt; "Name: " &lt;&lt; p.name &lt;&lt; "\t Phone: " &lt;&lt; p.phoneNumber &lt;&lt; endl;
 }
 </code></pre>
 </figure>
