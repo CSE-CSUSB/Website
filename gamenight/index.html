@@ -208,6 +208,14 @@ Minecraft if you are interested in joining the Minecraft server! <br> <br>The fi
         <br>
         <br>
         <script>
+            
+        function professionalize (dateNumber) {
+            if (dateNumber < 10) {
+                return "0" + dateNumber;
+            } else {
+                return dateNumber;
+            }
+        }
         // Set the date we're counting down to
         var countDownDate = new Date("May 25, 2018 18:00:00").getTime();
 
@@ -227,8 +235,8 @@ Minecraft if you are interested in joining the Minecraft server! <br> <br>The fi
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Output the result in an element with id="demo"
-            document.getElementById("demo").innerHTML = days + " : " + hours + " : "
-            + minutes + " : " + seconds + "";
+            document.getElementById("demo").innerHTML = days + " : " + professionalize (hours) + " : " + professionalize (minutes) + " : " + professionalize (seconds);
+           
 
             // If the count down is over, write some text 
             if (distance < 0) {
