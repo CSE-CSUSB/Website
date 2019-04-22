@@ -10,14 +10,21 @@ html,
 body {
     height: 100%;
 }
-video {
-height: 100%;
-left: 0;
-object-fit: cover;
-position: absolute;
-top: 50px;
-width: 100%;
+/*
+.videoContainer
+{
+   position:absolute;
+   height:100%;
+   width:100%;
+    overflow: hidden;
 }
+
+.videoContainer video
+{
+  min-width: 100%;
+  min-height: 100%;
+}
+*/
 
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
